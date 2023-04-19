@@ -1,8 +1,8 @@
-activate_this = '/var/www/stocksdess/t/venv/bin/activate_this.py'
+# activate_this = '/var/www/stocksdess/t/venv/bin/activate_this.py'
 
-#with open(activate_this) as file_:
-with open(activate_this) as file:
-   exec(file.read(), dict(__file__=activate_this))
+# #with open(activate_this) as file_:
+# with open(activate_this) as file:
+#    exec(file.read(), dict(__file__=activate_this))
 import time
 from flask import Flask, request, render_template
 import json
@@ -796,4 +796,4 @@ def yahoostocks(stokspost):
         return '{"data" : []}'
 
 
-# app.run(host='0.0.0.0', port=5000)
+app.run(host='0.0.0.0', port=5000)
